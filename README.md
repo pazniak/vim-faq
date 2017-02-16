@@ -4,6 +4,37 @@ Still not using VIM as your main IDE? Read this page!
 
 # Table of contents
 
+## Everyday vim
+
+ + Mouse
+ + Select with mouse, --(visual)-- , copy and paste with y p yy [p ]p P
+ + Let vim hint you with :set wildmenu
+ + Spell checking with :set spell and z=
+ + Building projects and error messages with :set makeprg and :cw, :cc, :cn and @:
+ + Searching everywhere and jumping to locations with :lvim, :lwin, :ll, :lne and @:
+ + Tabs to hold several views with :tabn, :tabc and gt gT for cycling
+ + Windows to create views with :new :vnew :q :split :vsplit :resize ZZ ZQ
+ + Buffers for editing multiple files with :ls :e :b :bd :bn :bp Ctrl-^ Ctrl-o Ctrl-i
+ + Run multiple VIM instances and switch between them with Ctrl-z and bash's fg and jobs
+ + View project files vith NERDTreeView and NERDTreeAllTabs
+ + Highlight a word with :let @/="" and \<c-r\>\<c-w\>; use :noh to switch off
+ + Highlight whatever you want to read logs comfortably with :match and :matchgroup
+ + Use :call TrimWhitespace() and autocmd! to get rid of trailing spaces
+ + Use :set paste to turn off all mappings and filetype plugins for pasting formatted text
+ + Use :set list to show the characters that are normally not shown: space, linefeed, tab
+ + Browse source with gg G gf gd gD # * g# g\* / n N
+ + Browse source with Ctags Ctrl-[ Ctrl-] :tn :ts :tp Ctrl-Shift-]
+ + Browse source with Cscope and CTree
+ + Position current line on top with zt, in the center with zz, bottom zb
+ 
+## Refactoring
+ + Rename in all buffers with :bufdo and :s with flags ge
+ + Rename in a single block with Shift-v and :'<,'>s with flags gc
+ 
+## Formatting
+ + Comment // with Ctrl-v and Shift+i
+ + Uncomment // with Ctrl-v x or X
+
 ## Vim and git
 
 First of all you definitely need to give a try to [fugitive.vim by Tim Pope](https://github.com/tpope/vim-fugitive).
