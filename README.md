@@ -112,6 +112,7 @@ git config --global alias.s '!f() { rev=${1-HEAD}; git difftool $rev^ $rev; }; f
 ## Wrap string literal while typing in insert mode
 Some IDE allow you to type multiline string literals without bothering you with how to break the literal enclosed in quotes into multiple lines, preserving quotes. Some IDE even fix the indentation when wrapping the literal. I just suggest you a small script, not impecable, yet useful and powerful.
 
+Note: ^M means what `<cr>` produces literally. So to paste it into your script, use `<c-v><cr>`. If you just copy-paste the text from the box below, it won't work. You need to replace ^M with `<c-v><cr>` by hand.
 ```vim
 "BUG: if the cursor is after closing " and it's the end of current line right 
 "     under the cursor ($), the mapping works as if the cursor was inside the
@@ -128,7 +129,7 @@ function! WrapQuotes()
         "Want beautiful indentation? " will appear on the next
         "line right at the same column as opening " on current line.
         let [lnum, col] = searchpos('"', 'bn', line("."))
-        exec "normal! i\""
+        exec "normal! i\"^M"
         let ind = col - col(".") 
         if ind != 0
             exec "normal! " . ind . "i "
@@ -141,7 +142,7 @@ function! WrapQuotes()
             exec "normal! a\""
         endif
     else
-        exec "normal! a"
+        exec "normal! a^M"
     endif
 endfunction
 inoremap <s-cr> <c-o>:call WrapQuotes()<cr>
