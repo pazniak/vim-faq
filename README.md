@@ -8,10 +8,14 @@ Still not using VIM as your main IDE? Read this page!
 
  + Mouse
  + Select with mouse, --(visual)-- , copy and paste with y p yy [p ]p P
+ + Undo/redo with u and Ctrl+R
  + Let vim hint you with :set wildmenu
  + Spell checking with :set spell and z=
  + Building projects and error messages with :set makeprg and :cw, :cc, :cn and @:
+ + Building on external host, virtual machine, from Windows on Linux
  + Searching everywhere and jumping to locations with :lvim, :lwin, :ll, :lne and @:
+ + Searching current buffer with / /\v and n N
+ + Searching current line with f and ;
  + Tabs to hold several views with :tabn, :tabc and gt gT for cycling
  + Windows to create views with :new :vnew :q :split :vsplit :resize ZZ ZQ
  + Buffers for editing multiple files with :ls :e :b :bd :bn :bp Ctrl-^ Ctrl-o Ctrl-i
@@ -19,8 +23,8 @@ Still not using VIM as your main IDE? Read this page!
  + View project files vith NERDTreeView and NERDTreeAllTabs
  + Highlight a word with :let @/="" and \<c-r\>\<c-w\>; use :noh to switch off
  + Highlight whatever you want to read logs comfortably with :match and :matchgroup
- + Use :call TrimWhitespace() and autocmd! to get rid of trailing spaces
- + Use :set paste to turn off all mappings and filetype plugins for pasting formatted text
+ + Get rid of trailing spaces with :call TrimWhitespace() and autocmd!
+ + Paste formatted text with :set paste
  + Use :set list to show the characters that are normally not shown: space, linefeed, tab
  + Browse source with gg G gf gd gD # * g# g\* / n N
  + Browse source with Ctags Ctrl-[ Ctrl-] :tn :ts :tp Ctrl-Shift-]
@@ -30,10 +34,14 @@ Still not using VIM as your main IDE? Read this page!
 ## Refactoring
  + Rename in all buffers with :bufdo and :s with flags ge
  + Rename in a single block with Shift-v and :'<,'>s with flags gc
+ + Move pieces of code with --VISUAL-- and :m
+ + Extract a function with --VISUAL-- c and p
  
 ## Formatting
  + Comment // with Ctrl-v and Shift+i
  + Uncomment // with Ctrl-v x or X
+ + Change indentation with --VISUAL--  > and .
+ + Change indentation of single line with >> << and .
 
 ## Vim and git
 
