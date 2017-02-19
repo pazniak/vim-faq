@@ -8,7 +8,8 @@ Still not using VIM as your main IDE? Read this page!
 
  + Mouse
  + Select with mouse, --(visual)-- , copy and paste with y p yy [p ]p P
- + Undo/redo with u and Ctrl+R
+ + Undo/redo with u and Ctrl+R, backup and swap files
+ + Auto-saving
  + Let vim hint you with :set wildmenu
  + Spell checking with :set spell and z=
  + Building projects and error messages with :set makeprg and :cw, :cc, :cn and @:
@@ -28,14 +29,16 @@ Still not using VIM as your main IDE? Read this page!
  + Use :set list to show the characters that are normally not shown: space, linefeed, tab
  + Browse source with gg G gf gd gD # * g# g\* / n N
  + Browse source with Ctags Ctrl-[ Ctrl-] :tn :ts :tp Ctrl-Shift-]
- + Browse source with Cscope and CTree
+ + Browse source with Cscope and CCTree
  + Position current line on top with zt, in the center with zz, bottom zb
+ + Read long code easier with code folding: --VISUAL-- zf, zo, zc
+ + Jump between H and CPP files with a.vim
  
 ## Refactoring
  + Rename in all buffers with :bufdo and :s with flags ge
  + Rename in a single block with Shift-v and :'<,'>s with flags gc
  + Move pieces of code with --VISUAL-- and :m
- + Extract a function with --VISUAL-- c and p
+ + Extract a function with --VISUAL-- "fc and "fp
  
 ## Formatting
  + Comment // with Ctrl-v and Shift+i
