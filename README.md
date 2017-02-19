@@ -6,6 +6,7 @@ Still not using VIM as your main IDE? Read this page!
 
 ## Everyday vim
 
+ + Consider switching to [neovim](https://neovim.io/)
  + Mouse
  + Select with mouse, --(visual)-- , copy and paste with y p yy [p ]p P
  + Undo/redo with u and Ctrl+R, backup and swap files
