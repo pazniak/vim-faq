@@ -9,6 +9,7 @@ Still not using VIM as your main IDE? Read this page!
  + Consider switching to [neovim](https://neovim.io/)
  + Mouse
  + Select with mouse, --(visual)-- , copy and paste with y p yy [p ]p P
+ + Copy and paste text in --INSERT-- mode with mouse wheel click, visual selection and y
  + Undo/redo with u and Ctrl+R, backup and swap files
  + Auto-saving
  + Let vim hint you with :set wildmenu
@@ -34,6 +35,8 @@ Still not using VIM as your main IDE? Read this page!
  + Position current line on top with zt, in the center with zz, bottom zb
  + Read long code easier with code folding: --VISUAL-- zf, zo, zc
  + Jump between H and CPP files with a.vim
+ + Repeat last command with @: and .
+ + Record and playback a macro with q\<letter\> ... q with @\<letter\>
  
 ## Refactoring
  + Rename in all buffers with :bufdo and :s with flags ge
@@ -46,6 +49,9 @@ Still not using VIM as your main IDE? Read this page!
  + Uncomment // with Ctrl-v x or X
  + Change indentation with --VISUAL--  > and .
  + Change indentation of single line with >> << and .
+ + Reformat a selected text according to specific padding and line width rules
+ + Automatically trim trailing whitespace
+ + Highlight trailing whitespace
 
 ## Vim and git
 
@@ -58,10 +64,11 @@ First of all you definitely need to give a try to [fugitive.vim by Tim Pope](htt
 First of all try search the needed feature at [vimawesome][1]
 
 + [Wrap string literal while typing in insert mode](#wrap-string-literal-while-typing-in-insert-mode)
++ Highlight the word under cursor
 
 ## Links
 
-First of all you might to give a chance to these resources dedicated to VIM. It's always a good idea to have them at hand.
+First of all you might want to give a chance to these resources dedicated to VIM. It's always a good idea to have them at hand.
 
 + [http://vimawesome.com/][1]
 + http://learnvimscriptthehardway.stevelosh.com/ 
