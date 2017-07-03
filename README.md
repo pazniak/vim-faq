@@ -138,7 +138,7 @@ wget https://raw.githubusercontent.com/amstell/vim-faq/master/wrap-quotes.vim
 ```
 Place this into your vimrc:
 ```vim
-source ~/.vim/vim-quotes.vim
+source ~/.vim/wrap-quotes.vim
 ```
 
 [1]: http://vimawesome.com/
