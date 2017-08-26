@@ -134,7 +134,7 @@ Some IDE allow you to type multiline string literals without bothering you with 
 Download the script:
 ```bash
 cd ~/.vim/
-wget https://raw.githubusercontent.com/amstell/vim-faq/master/wrap-quotes.vim
+wget https://raw.githubusercontent.com/pazniak/vim-faq/master/wrap-quotes.vim
 ```
 Place this into your vimrc:
 ```vim
