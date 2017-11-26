@@ -61,7 +61,7 @@ First of all you definitely need to give a try to [fugitive.vim by Tim Pope](htt
 
 ## Coding assistance
 
-First of all try search the needed feature at [vimawesome][1]
+First of all try search the needed feature at [vimawesome][1] and [google vim plugins][2]
 
 + [Wrap string literal while typing in insert mode](#wrap-string-literal-while-typing-in-insert-mode)
 + Highlight the word under cursor
@@ -142,3 +142,4 @@ source ~/.vim/wrap-quotes.vim
 ```
 
 [1]: http://vimawesome.com/
+[2]: https://opensource.google.com/projects/vim-plugins
